@@ -1,0 +1,36 @@
+# Report directory (Word docs and PDFs)
+report/
+
+# Virtual environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model weights and saved models
+*.h5
+*.pickle
+*.pkl
+
+# Data files
+*.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
