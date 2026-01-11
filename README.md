@@ -9,11 +9,13 @@ A collection of deep learning projects for image classification tasks, including
 Face recognition system trained on 14 celebrity faces using transfer learning.
 
 **Notebooks:**
+
 - `14_faces_Densenet201.ipynb` - Main training notebook using DenseNet201 pretrained on ImageNet
 - `augment.ipynb` - Data augmentation pipeline using the Augmentor library (rotation, zoom, flip, distortion)
 - `load.ipynb` - Data loading and preprocessing utilities
 
 **Key Features:**
+
 - Transfer learning with DenseNet201 (18M+ parameters)
 - Image preprocessing and resizing to 224x224
 - Data augmentation for improved generalization
@@ -26,18 +28,21 @@ Face recognition system trained on 14 celebrity faces using transfer learning.
 Large-scale flower classification on 104 different flower species using TPU acceleration.
 
 **Notebook:**
+
 - `Elementary.ipynb` - Comprehensive notebook comparing multiple architectures
 
 **Models Compared:**
-| Model | Parameters | Architecture |
-|-------|------------|--------------|
-| DenseNet201 | 18.5M | Pre-trained, fine-tuned |
-| Xception | 21M | Pre-trained, fine-tuned |
-| ResNet50 | 23.8M | Pre-trained, fine-tuned |
-| Custom CNN (3 layers) | 8.4M | Built from scratch |
-| Custom VGG (3 blocks) | 8.5M | Built from scratch |
+
+| Model                 | Parameters | Architecture            |
+| --------------------- | ---------- | ----------------------- |
+| DenseNet201           | 18.5M      | Pre-trained, fine-tuned |
+| Xception              | 21M        | Pre-trained, fine-tuned |
+| ResNet50              | 23.8M      | Pre-trained, fine-tuned |
+| Custom CNN (3 layers) | 8.4M       | Built from scratch      |
+| Custom VGG (3 blocks) | 8.5M       | Built from scratch      |
 
 **Key Features:**
+
 - TPU distributed training (8 replicas)
 - TFRecord data pipeline for efficient loading
 - Multiple data augmentation strategies (v1, v2, v3)
@@ -53,9 +58,11 @@ Large-scale flower classification on 104 different flower species using TPU acce
 Large-scale face recognition using the MS-Celeb-1M dataset with distributed data processing.
 
 **Notebook:**
+
 - `ms_celeb_1GB.ipynb` - Training pipeline for large-scale face recognition
 
 **Key Features:**
+
 - MobileNetV3Small backbone for efficient inference
 - PySpark for distributed data loading
 - Dask for parallel CSV processing
@@ -78,16 +85,19 @@ Large-scale face recognition using the MS-Celeb-1M dataset with distributed data
 ## Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install tensorflow keras opencv-python pillow numpy pandas scikit-learn matplotlib seaborn augmentor
 ```
 
 3. For large-scale processing (MS-Celeb):
+
 ```bash
 pip install pyspark dask
 ```
@@ -100,7 +110,7 @@ Each notebook is designed to run in Google Colab with GPU/TPU acceleration. Uplo
 
 ## Authors
 
+- Arshia Esmail Tehrani
 - Ali Babaloo
-- Arshia Tehrani
 - Pouya Sharifi
 - Pouya Ebrahimi
